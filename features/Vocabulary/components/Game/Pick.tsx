@@ -19,6 +19,12 @@ import { useCrazyModeTrigger } from '@/features/CrazyMode/hooks/useCrazyModeTrig
 
 const random = new Random();
 
+// Helper function to check if a word contains kanji characters
+// Kanji are in the CJK Unified Ideographs range (U+4E00 to U+9FAF)
+const containsKanji = (text: string): boolean => {
+  return /[\u4E00-\u9FAF]/.test(text);
+};
+
 interface VocabPickGameProps {
   selectedWordObjs: IVocabObj[];
   isHidden: boolean;
@@ -209,8 +215,21 @@ const VocabPickGame = ({
     }
     setCorrectChar(newChar);
 
-    // Toggle quiz type for the next question
-    setQuizType(prev => (prev === 'meaning' ? 'reading' : 'meaning'));
+    // Get the actual word for the new character to check if it contains kanji
+    const newWordObj = isReverse
+      ? selectedWordObjs.find(obj => obj.meanings[0] === newChar)
+      : selectedWordObjs.find(obj => obj.word === newChar);
+
+    const wordToCheck = newWordObj?.word ?? '';
+
+    // Only toggle to reading quiz if the word contains kanji
+    // Pure kana words skip reading quiz since reading === word
+    if (containsKanji(wordToCheck)) {
+      setQuizType(prev => (prev === 'meaning' ? 'reading' : 'meaning'));
+    } else {
+      // For pure kana words, always use meaning quiz
+      setQuizType('meaning');
+    }
   };
 
   const gameMode = isReverse ? 'reverse pick' : 'pick';
