@@ -39,10 +39,10 @@ const animationKeyframes = `
 
 @keyframes breathe {
   0%, 100% {
-    opacity: 1;
+    filter: brightness(1);
   }
   50% {
-    opacity: 0.3;
+    filter: brightness(0.5);
   }
 }
 `;
@@ -317,16 +317,18 @@ const StaticChar = memo(
           color: style.color,
           contentVisibility: 'auto',
           containIntrinsicSize: '36px',
-          // When fading: apply opacity 1 with smooth transition
+          // Animation uses filter:brightness (not opacity), so no conflict with opacity fade
+          // Only animate when not fading
+          animation:
+            isAnimating && !isFading
+              ? `breathe ${ANIMATION_CONFIG.pulseDuration}ms ease-in-out infinite`
+              : undefined,
+          // When fading, smoothly transition opacity to fade out the pulsing
+          // Opacity and brightness are independent, so they don't conflict
           ...(isFading && {
             opacity: 1,
             transition: `opacity ${ANIMATION_CONFIG.transitionDuration}ms ease-in-out`
-          }),
-          // When animating: apply breathe animation
-          ...(isAnimating &&
-            !isFading && {
-              animation: `breathe ${ANIMATION_CONFIG.pulseDuration}ms ease-in-out infinite`
-            })
+          })
         }}
       >
         {style.char}
