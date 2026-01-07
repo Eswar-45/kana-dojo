@@ -807,70 +807,71 @@ const baseThemeSets: BaseThemeGroup[] = [
       },
       {
         id: 'nirinsou',
-        backgroundColor: 'oklch(23.5% 0.039 285.0 / 1)',  // starlit indigo-violet
-        mainColor: 'oklch(91.0% 0.235 143.0 / 1)',        // wildflower lime (yellow-green)
-        secondaryColor: 'oklch(93.0% 0.198 60.0 / 1)'     // dusk apricot (pastel orange)
+        backgroundColor: 'oklch(23.5% 0.039 285.0 / 1)', // starlit indigo-violet
+        mainColor: 'oklch(91.0% 0.235 143.0 / 1)', // wildflower lime (yellow-green)
+        secondaryColor: 'oklch(93.0% 0.198 60.0 / 1)' // dusk apricot (pastel orange)
       },
       {
         id: 'aosora',
-        backgroundColor: 'oklch(21.5% 0.041 230.0 / 1)',  // airy night slate
-        mainColor: 'oklch(94.0% 0.240 194.0 / 1)',        // celestial turquoise
-        secondaryColor: 'oklch(92.5% 0.153 284.0 / 1)'    // dreamlike pale periwinkle
+        backgroundColor: 'oklch(21.5% 0.041 230.0 / 1)', // airy night slate
+        mainColor: 'oklch(94.0% 0.240 194.0 / 1)', // celestial turquoise
+        secondaryColor: 'oklch(92.5% 0.153 284.0 / 1)' // dreamlike pale periwinkle
       },
       {
         id: 'hoshishio',
-        backgroundColor: 'oklch(22.0% 0.038 300.0 / 1)',  // cosmic twilight
-        mainColor: 'oklch(93.0% 0.220 163.0 / 1)',        // stardust seafoam (minty green)
-        secondaryColor: 'oklch(91.0% 0.183 308.0 / 1)'    // bright lavender
+        backgroundColor: 'oklch(22.0% 0.038 300.0 / 1)', // cosmic twilight
+        mainColor: 'oklch(93.0% 0.220 163.0 / 1)', // stardust seafoam (minty green)
+        secondaryColor: 'oklch(91.0% 0.183 308.0 / 1)' // bright lavender
       },
       {
         id: 'yumemizu',
-        backgroundColor: 'oklch(20.5% 0.042 220.0 / 1)',  // deep dreamwater blue
-        mainColor: 'oklch(92.0% 0.246 170.0 / 1)',        // nebula teal-mint
-        secondaryColor: 'oklch(90.0% 0.176 338.0 / 1)'    // magical pale magenta
+        backgroundColor: 'oklch(20.5% 0.042 220.0 / 1)', // deep dreamwater blue
+        mainColor: 'oklch(92.0% 0.246 170.0 / 1)', // nebula teal-mint
+        secondaryColor: 'oklch(90.0% 0.176 338.0 / 1)' // magical pale magenta
       },
       {
         id: 'hisui',
-        backgroundColor: 'oklch(10.8% 0.018 258.0 / 1)',  // meteor graphite
-        mainColor: 'oklch(86.0% 0.193 150.0 / 1)',        // cosmic jade green
-        secondaryColor: 'oklch(88.5% 0.218 55.0 / 1)'     // nova tangerine
+        backgroundColor: 'oklch(10.8% 0.018 258.0 / 1)', // meteor graphite
+        mainColor: 'oklch(86.0% 0.193 150.0 / 1)', // cosmic jade green
+        secondaryColor: 'oklch(88.5% 0.218 55.0 / 1)' // nova tangerine
       },
       {
         id: 'ichigoha',
-        backgroundColor: 'oklch(22.3% 0.048 142.7 / 1)',  // mossy green night
-        mainColor: 'oklch(94.0% 0.266 125.5 / 1)',        // radiant lime-leaf
-        secondaryColor: 'oklch(91.5% 0.184 10.0 / 1)'     // blush pink strawberry skin
+        backgroundColor: 'oklch(22.3% 0.048 142.7 / 1)', // mossy green night
+        mainColor: 'oklch(94.0% 0.266 125.5 / 1)', // radiant lime-leaf
+        secondaryColor: 'oklch(91.5% 0.184 10.0 / 1)' // blush pink strawberry skin
       },
       {
         id: 'kumonasu',
-        backgroundColor: 'oklch(19.0% 0.043 302.0 / 1)',  // rich eggplant moon
-        mainColor: 'oklch(93.0% 0.165 265.0 / 1)',        // cloud-purple
-        secondaryColor: 'oklch(92.0% 0.140 200.0 / 1)'    // ethereal soft cyan
+        backgroundColor: 'oklch(19.0% 0.043 302.0 / 1)', // rich eggplant moon
+        mainColor: 'oklch(93.0% 0.165 265.0 / 1)', // cloud-purple
+        secondaryColor: 'oklch(92.0% 0.140 200.0 / 1)' // ethereal soft cyan
       },
       {
         id: 'shirafuji',
-        backgroundColor: 'oklch(18.5% 0.042 306.0 / 1)',  // pale wisteria night
-        mainColor: 'oklch(96.0% 0.125 290.0 / 1)',        // soft lavender white
-        secondaryColor: 'oklch(98.0% 0.118 111.0 / 1)'    // gentle cream
+        backgroundColor: 'oklch(18.5% 0.042 306.0 / 1)', // pale wisteria night
+        mainColor: 'oklch(96.0% 0.125 290.0 / 1)', // soft lavender white
+        secondaryColor: 'oklch(98.0% 0.118 111.0 / 1)' // gentle cream
       },
       {
         id: 'ginkou',
-        backgroundColor: 'oklch(19.0% 0.039 277.0 / 1)',    // atmospheric charcoal
-        mainColor: 'oklch(96.5% 0.215 145.0 / 1)',           // electric mint
-        secondaryColor: 'oklch(74.0% 0.205 40.0 / 1)',       // ember orange
+        backgroundColor: 'oklch(19.0% 0.039 277.0 / 1)', // atmospheric charcoal
+        mainColor: 'oklch(96.5% 0.215 145.0 / 1)', // electric mint
+        secondaryColor: 'oklch(74.0% 0.205 40.0 / 1)' // ember orange
       },
       {
         id: 'seiyoubo',
-        backgroundColor: 'oklch(18.0% 0.041 172.0 / 1)',   // deep green-grey
-        mainColor: 'oklch(95.5% 0.184 129.0 / 1)',         // light celery
-        secondaryColor: 'oklch(90.0% 0.178 276.0 / 1)',    // blue-ribbon lavender
+        backgroundColor: 'oklch(18.0% 0.041 172.0 / 1)', // deep green-grey
+        mainColor: 'oklch(95.5% 0.184 129.0 / 1)', // light celery
+        secondaryColor: 'oklch(90.0% 0.178 276.0 / 1)' // blue-ribbon lavender
       },
       {
         id: 'usumidori',
-        backgroundColor: 'oklch(16.0% 0.045 145.0 / 1)',    // midnight pine
-        mainColor: 'oklch(96.0% 0.225 140.0 / 1)',          // luminous mint
-        secondaryColor: 'oklch(92.0% 0.132 116.0 / 1)',     // pale pastel chartreuse
+        backgroundColor: 'oklch(16.0% 0.045 145.0 / 1)', // midnight pine
+        mainColor: 'oklch(96.0% 0.225 140.0 / 1)', // luminous mint
+        secondaryColor: 'oklch(92.0% 0.132 116.0 / 1)' // pale pastel chartreuse
       },
+      {
         id: 'morion',
         backgroundColor: 'oklch(20.0% 0.054 255.0 / 1)',
         mainColor: 'oklch(92.5% 0.190 130.0 / 1)',
