@@ -46,9 +46,7 @@ export default function ServiceWorkerRegistration() {
               '✅ All service workers unregistered and caches cleared'
             );
 
-            // TEMPORARILY DISABLED: Do not re-register the audio SW
-            // Uncomment the block below to re-enable audio caching
-            /*
+            // Re-register the audio SW after cache is cleared
             const registration = await navigator.serviceWorker.register(
               '/sw.js',
               {
@@ -64,7 +62,6 @@ export default function ServiceWorkerRegistration() {
               },
               60 * 60 * 1000
             );
-            */
           } catch (error) {
             console.warn('SW cleanup failed:', error);
           }
