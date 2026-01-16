@@ -32,7 +32,7 @@ module.exports = {
   config: {
     // Stale issue timing (in milliseconds)
     staleWarningAfterMs: 12 * 60 * 60 * 1000, // 12 hours
-    staleCloseAfterMs: 24 * 60 * 60 * 1000 // 24 hours
+    staleCloseAfterMs: 18 * 60 * 60 * 1000 // 18 hours
   },
 
   // =============================================================================
