@@ -37,19 +37,27 @@ const ORDERED_CLICK_EFFECTS = CLICK_EFFECT_MANUAL_ORDER.map(
 );
 
 const EMOJI_RAIN_POSITIONS = [
-  { top: '-22%', left: '-10%', size: 'text-xl', opacity: 'opacity-70' },
-  { top: '-12%', left: '34%', size: 'text-2xl', opacity: 'opacity-80' },
-  { top: '-18%', left: '76%', size: 'text-xl', opacity: 'opacity-65' },
-  { top: '14%', left: '-14%', size: 'text-2xl', opacity: 'opacity-75' },
-  { top: '16%', left: '24%', size: 'text-xl', opacity: 'opacity-90' },
-  { top: '10%', left: '66%', size: 'text-2xl', opacity: 'opacity-80' },
-  { top: '48%', left: '4%', size: 'text-xl', opacity: 'opacity-75' },
-  { top: '54%', left: '44%', size: 'text-2xl', opacity: 'opacity-90' },
-  { top: '46%', left: '88%', size: 'text-xl', opacity: 'opacity-70' },
-  { top: '82%', left: '-8%', size: 'text-xl', opacity: 'opacity-65' },
-  { top: '88%', left: '30%', size: 'text-2xl', opacity: 'opacity-80' },
-  { top: '86%', left: '72%', size: 'text-xl', opacity: 'opacity-70' },
-  { top: '96%', left: '98%', size: 'text-2xl', opacity: 'opacity-75' },
+  // Staggered diagonal cascade: intentional rhythm, deterministic per card.
+  { top: '-20%', left: '-12%', size: 'text-xl', opacity: 'opacity-55' },
+  { top: '-8%', left: '14%', size: 'text-2xl', opacity: 'opacity-75' },
+  { top: '-18%', left: '46%', size: 'text-xl', opacity: 'opacity-60' },
+  { top: '-6%', left: '78%', size: 'text-2xl', opacity: 'opacity-72' },
+  { top: '8%', left: '104%', size: 'text-xl', opacity: 'opacity-55' },
+
+  { top: '20%', left: '-16%', size: 'text-2xl', opacity: 'opacity-68' },
+  { top: '34%', left: '18%', size: 'text-xl', opacity: 'opacity-82' },
+  { top: '24%', left: '50%', size: 'text-2xl', opacity: 'opacity-88' },
+  { top: '36%', left: '82%', size: 'text-xl', opacity: 'opacity-76' },
+
+  { top: '58%', left: '-10%', size: 'text-xl', opacity: 'opacity-62' },
+  { top: '70%', left: '22%', size: 'text-2xl', opacity: 'opacity-84' },
+  { top: '60%', left: '54%', size: 'text-xl', opacity: 'opacity-80' },
+  { top: '72%', left: '88%', size: 'text-2xl', opacity: 'opacity-70' },
+
+  { top: '92%', left: '2%', size: 'text-xl', opacity: 'opacity-58' },
+  { top: '102%', left: '34%', size: 'text-2xl', opacity: 'opacity-72' },
+  { top: '94%', left: '68%', size: 'text-xl', opacity: 'opacity-60' },
+  { top: '108%', left: '98%', size: 'text-2xl', opacity: 'opacity-56' },
 ] as const;
 
 // ─── Effect card ─────────────────────────────────────────────────────────────
