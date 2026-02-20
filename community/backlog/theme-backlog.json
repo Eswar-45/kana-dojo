@@ -1257,7 +1257,9 @@
     "mainColor": "oklch(35.0% 0.085 255.0 / 1)",
     "secondaryColor": "oklch(55.0% 0.055 65.0 / 1)",
     "issued": true,
-    "completed": false
+    "completed": true,
+    "completedBy": "Moonlight304",
+    "completedPR": 5525
   },
   {
     "id": "maple-lacquer",
