@@ -296,7 +296,7 @@
     "english": "This ends here.",
     "game": "Final Fantasy X",
     "character": "Tidus",
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
